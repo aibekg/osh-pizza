@@ -1,0 +1,51 @@
+@import-normalize;
+
+body{
+  background-color: #fefdf4 !important;
+}
+.favorite_empty_block{
+  background-image: url("./2a92a8230b3fa2e760a1fd4823059290.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.favorite_empty_text{
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #005d5b;
+  font-weight: 500;
+}
+.favorite_block{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.basketBtn{
+  position: fixed;
+  right: -10px;
+  z-index: 10;
+  top:60%;
+  padding: 5px 20px;
+  background-color: #ff392b;
+  width: 70px;
+  border-radius: 30px 0 0 30px;
+  box-shadow:inset 0 0 10px #080808;
+  &:active{
+    background-color: #ffa607;
+  }
+  cursor: pointer;
+  color: white;
+}
+.badge_cart{
+  position: absolute;
+  left: -5px;
+  border-radius: 50px!important;
+  top: -5px;
+  box-shadow: inset 0 0 5px #545454;
+}

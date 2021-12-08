@@ -1,0 +1,97 @@
+$col-i: #078a88 ;
+
+.navbar{
+  a{
+    color: grey!important;
+    transition: .5s;
+    padding-bottom: 5px;
+    &:hover{
+      text-shadow: 0 0 30px grey;
+      color: #ffc400 !important;
+      cursor: pointer;
+    }
+  }
+  .active{
+    color: #ffc400!important ;
+  }
+}
+.menu_container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  font-size: 18px;
+  >span{
+    position: relative;
+    width: 60px;
+    border-radius: 10px;
+    height: 55px;
+    cursor: pointer;
+    background-color: #fff1d3;
+    transition: .4s;
+    box-shadow: 1px 1px 1px #867c7c;
+    &:hover{
+      box-shadow: 3px 2px 10px #867c7c;
+    }
+    &:hover span {
+      text-shadow: 0 0 30px #ff0000;
+    }
+    >i{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      color: #ff7100;
+      transform: translate(-50%, -50%);
+      font-size: 26px;
+    }
+    span{
+      font-size: 16px;
+      position: absolute;
+      bottom: -30px;
+      width: inherit;
+      text-align: center;
+      color: #717171;
+    }
+  }
+}
+.col-i {
+  color:  $col-i;
+}
+.header_menu{
+  span{
+    color: #6e6e6e;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 350px;
+    border-bottom: 1px dashed #ff8400;
+  }
+}
+.active_menu {
+    background-color: $col-i!important;
+    transform: translateY(-8px);
+    i{
+      color: wheat!important;
+    }
+}
+.navbar_button{
+  width: 160px!important;
+  border-radius: 20px 20px 0 20px!important;
+}
+.footer_{
+  background-color: #003535;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300!important;
+  position: relative;
+  box-shadow: 0 -5px 5px #4a7b3e;
+}
+.footer_icon{
+  position: absolute;
+  top: -95px;
+  left: 20px;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
