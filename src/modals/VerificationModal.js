@@ -16,8 +16,9 @@ import {errorMessage, successMessage} from "../utilis/messages";
 import {useNavigate} from "react-router-dom";
 import {getUser, setUserToken} from "../store/slices/userSlice";
 
+//new Array(4).fill('')
 const VerificationModal = () => {
-    const [otp, setOtp] = useState(new Array(4).fill(''));
+    const [otp, setOtp] = useState(['1', '2', '3', '4']);
     const {pinCodeModal, hashCode, phoneNumber} = useSelector(state => state.modal);
     const {token} = useSelector(state => state.user)
     const dispatch = useDispatch();
